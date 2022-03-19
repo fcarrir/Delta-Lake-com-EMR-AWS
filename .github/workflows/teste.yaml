@@ -18,7 +18,7 @@ jobs:
         python-version: 3.8
 
     - name: HashiCorp - Setup Terraform
-      uses: hashicorp/setup-terraform@v4.5.0
+      uses: hashicorp/setup-terraform@v1.2.1
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
@@ -39,4 +39,3 @@ jobs:
         $COMMAND_IAC init
         $COMMAND_IAC validate
         $COMMAND_IAC plan
-        
