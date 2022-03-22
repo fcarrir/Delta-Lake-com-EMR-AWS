@@ -33,7 +33,7 @@ def handler(event, context):
                     'Ec2KeyName': 'fcarrir-igti-teste',
                     'KeepJobFlowAliveWhenNoSteps': True,
                     'TerminationProtected': False,
-                    'Ec2SubnetId': 'subnet-03832b68'
+                    'Ec2SubnetId': 'subnet-65074e29'
                 },
 
                 Applications=[
