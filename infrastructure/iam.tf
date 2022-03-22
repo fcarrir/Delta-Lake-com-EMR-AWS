@@ -1,5 +1,5 @@
 resource "aws_iam_role" "lambda" {
-  name = "igti_lambda_role"
+  name = "IGTILambdaRole"
 
   assume_role_policy = <<EOF
 {
@@ -23,8 +23,6 @@ EOF
   }
 
 }
-
-
 
 resource "aws_iam_policy" "lambda" {
   name        = "IGTIAWSLambdaBasicExecutionRolePolicy"
@@ -68,7 +66,6 @@ resource "aws_iam_policy" "lambda" {
 }
 EOF
 }
-
 
 resource "aws_iam_role_policy_attachment" "lambda_attach" {
   role       = aws_iam_role.lambda.name
