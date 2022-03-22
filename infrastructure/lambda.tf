@@ -1,3 +1,5 @@
+
+  
 resource "aws_lambda_function" "executa_emr" {
   filename      = "lambda_function_payload.zip"
   function_name = var.lambda_function_name
@@ -11,7 +13,7 @@ resource "aws_lambda_function" "executa_emr" {
   runtime = "python3.8"
 
   tags = {
-    IES   = "IGTI",
+    IES   = "IGTI"
     CURSO = "EDC"
   }
 
